@@ -3,9 +3,10 @@
 
 <html>
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/stylesheets/style.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-wdith. initial-scale=1">
+	<meta name="viewport" content="width=device-width" initial-scale=1">
 
     <title></title>
 </head>
@@ -43,20 +44,40 @@
 		<div class="row">
 			<div class="col-lg-8 map" id="gMap">
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 panel-back">
 				<div class="container-fluid control">
 					<div class="row content">
-					{% block content %}{% endblock %}
+                        <div class="panel panel-default panel-fill">
+                            <div class="panel-body">
+        					   {% block content %}{% endblock %}
+                            </div>
+                        </div>
 					</div>
 				</div>
-				<div class="container-fluid controlLabel">
-					<div class="row"></div>
-				</div>
-				<div class="container-fluid controlLabel">
-					<div class="row"></div>
-				</div>
+<!-- 				<div class="container-fluid controlLabel">
+					<div class="row text-center">
+                        <span class="day-close">Day 2<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></span>
+                    </div>
+				</div> -->
 				<div class="container-fluid control">
-					<div class="row"></div>
+					<div class="row">
+                        <div class="panel panel-default panel-fill">
+                            <div class="panel-heading">
+                                    <button class="btn-active btn btn-circle" type="submit">1</button>
+                                    <button class="btn btn-circle" type="submit">2</button>
+                                    <button class="btn btn-circle" type="submit">+</button>
+                            </div>
+                            <div class="panel-body">
+                                <p class="category">My Hotel</p>
+                                    <ul>
+                                        <li><span class="middle">Hotel 1</span><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></li>
+                                        <li></li>
+                                    </ul>
+                                <p class="category">My Restaurants</p>
+                                <p class="category">My Activities</p>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -67,7 +88,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 	<script>
 	function initialize_gmaps() {
     // initialize new google maps LatLng object

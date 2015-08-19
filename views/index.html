@@ -1,21 +1,21 @@
 {% extends "layout.html" %}
 
 {% block content %}
-  Hotels:
+  <p class="category">Hotels: </p>
   <select>
   {% for hotel in hotels %}
     <option value="{{hotel.name}}">{{hotel.name}}</option>
   {% endfor %}
   </select>
 
-  Restaurants:
+  <p class="category">Restaurants: </p>
   <select>
   {% for restaurant in restaurants %}
     <option value="{{restaurant.name}}">{{restaurant.name}}</option>
   {% endfor %}
   </select>
 
-  Activities:
+  <p class="category">Activities: </p>
   <select>
   {% for activity in activities %}
     <option value="{{activity.name}}">{{activity.name}}</option>

@@ -1,22 +1,58 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; }
+
 div {
-  border: 1px solid red;
   margin: 0 0;
   padding: 0 0; }
 
 .map {
-  height: 700px; }
+  height: 600px; }
 
 .control {
   height: 300px; }
 
-.controlLabel {
-  height: 50px; }
-
 select {
-  display: block; }
+  display: block;
+  margin-bottom: 10px;
+  -webkit-appearance: menulist-button;
+  width: 100%; }
 
 .navbar {
   background-color: #3a2c1f; }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
   color: #ebf9ff; }
+
+.category {
+  font-size: 1.2em;
+  margin: 0; }
+
+.panel-fill {
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: #cb8669;
+  height: 250px; }
+
+.panel-heading {
+  border-radius: 15px 15px 0 0; }
+
+.panel-back {
+  background-color: #e5c3b5; }
+
+.btn-circle {
+  border-radius: 50%; }
+
+.btn-active {
+  background-color: #995335; }
+
+.btn-default {
+  height: 50px;
+  font-size: 1.2em;
+  border-radius: 15px; }
+
+ul {
+  list-style-type: none; }
+
+.middle {
+  vertical-align: middle; }
