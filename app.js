@@ -22,7 +22,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+
 // app.use(cookieParser());
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -33,12 +33,15 @@ app.use('/', routes);
 // sass middleware
 app.use(sass({
   /*Options*/
-  src: __dirname,
-  dest: path.join(__dirname,'public'),
+  src: __dirname + '/assets',
+  dest: __dirname + '/public',
   debug: true,
-  outputStyle: 'compressed',
-  prefix: '/prefix'
+  //outputStyle: 'compressed',
+  //prefix: '/prefix'
 }));
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bower_components', express.static('bower_components'));
 
 
 /*--------- Error Handlers ----------*/

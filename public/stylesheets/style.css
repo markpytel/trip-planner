@@ -1,8 +1,22 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+div {
+  border: 1px solid red;
+  margin: 0 0;
+  padding: 0 0; }
 
-a {
-  color: #00B7FF;
-}
+.map {
+  height: 700px; }
+
+.control {
+  height: 300px; }
+
+.controlLabel {
+  height: 50px; }
+
+select {
+  display: block; }
+
+.navbar {
+  background-color: #3a2c1f; }
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+  color: #ebf9ff; }
