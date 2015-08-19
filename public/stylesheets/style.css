@@ -2,6 +2,9 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }
 
+body {
+  background-color: #e5c3b5; }
+
 div {
   margin: 0 0;
   padding: 0 0; }

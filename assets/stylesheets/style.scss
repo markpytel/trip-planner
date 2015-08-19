@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+	background-color: lighten(#cb8669, 20%);
+}
+
 div {
 	// border: 1px solid red;
 	margin: 0 0;
